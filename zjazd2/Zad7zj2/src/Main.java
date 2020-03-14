@@ -1,8 +1,9 @@
+/*SUMMARY: "Stwórz klase reprezentującą trojkąt, który musi posiadać atrybuty określające długości boków.
+			Klasa powinna posiadada metody: obliczajace pole, obwód,  isEquilateral, isIsosceles, or isScalene.
+ AUTHOR: Joanna Walkiewicz*/
+
 import java.util.Scanner;
 
-/*SUMMARY: "Stwórz klasę reprezentującą trójkąt, który musi posiadać atrybuty określające długości boków. 
-			Klasa powinna posiadada metody: obliczające pole, obwód,  isEquilateral, isIsosceles, or isScalene.
-  AUTHOR: Joanna Walkiewicz*/
 public class Main {
 
 	public static void main(String[] args) {
