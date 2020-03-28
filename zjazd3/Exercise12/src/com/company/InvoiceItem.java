@@ -10,10 +10,10 @@ public class InvoiceItem {
     private int qty;
     private double unitPrice;
 
-    public InvoiceItem(String id, String desc, int qty, double unitPrice)  //konstruktor
+    public InvoiceItem(String id, String desc, int qty, double unitPrice)
     {
         this.id = id;
-        this.desc = desc;             //przypisanie wartości pól
+        this.desc = desc;
         this.qty = qty;
         this.unitPrice = unitPrice;
     }
@@ -30,10 +30,9 @@ public class InvoiceItem {
         return this.qty;
     }
 
-    public void setQty(int qty) {       //met która nic nie zwraca, przyjmuje parametr int
-        this.qty = qty;                 // przypisuje prywatnemu polu wartosc parametru qty
+    public void setQty(int qty) {
+        this.qty = qty;
     }
-
     public double getUnitPrice() {
         return unitPrice;
     }

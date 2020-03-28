@@ -10,13 +10,13 @@ public class Employee {
     private String lastName;
     private int salary;
 
-    public Employee(int id, String firstName, String lastName, int salary ) {       //kontruktor
+    public Employee(int id, String firstName, String lastName, int salary ) {
         this.id=id;
-        this.firstName=firstName;     //przypisanie wartosci pól
+        this.firstName=firstName;
         this.lastName=lastName;
         this.salary=salary;
     }
-    public int getID()        //metody
+    public int getID()
     {
         return this.id;
     }

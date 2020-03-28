@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54aa5de6-f588-4d07-a99f-0a874a69a3a1" name="Default Changelist" comment="" />
+    <list default="true" id="54aa5de6-f588-4d07-a99f-0a874a69a3a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TestEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TestEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise12/src/com/company/InvoiceItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise12/src/com/company/InvoiceItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise14/src/com/company/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise14/src/com/company/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise15/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises13/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1ZaNWvDKdWPiFezm8WsyZjPNIhM" />
   <component name="ProjectViewState">
@@ -67,7 +81,10 @@
       <workItem from="1585312612525" duration="75000" />
       <workItem from="1585381302530" duration="28000" />
       <workItem from="1585381347643" duration="11000" />
-      <workItem from="1585381373840" duration="740000" />
+      <workItem from="1585381373840" duration="745000" />
+      <workItem from="1585383377404" duration="12000" />
+      <workItem from="1585386559065" duration="23000" />
+      <workItem from="1585386802691" duration="6000" />
     </task>
     <servers />
   </component>

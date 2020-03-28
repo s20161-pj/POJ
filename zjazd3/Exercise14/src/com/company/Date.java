@@ -9,7 +9,7 @@ public class Date {
     private int day;
     private int month;
     private int year;
-    private void validateday(int day) {             //funkcje prywatne
+    private void validateday(int day) {             
         if (day >= 1 && day <= 31) {
             this.day = day;
         } else {

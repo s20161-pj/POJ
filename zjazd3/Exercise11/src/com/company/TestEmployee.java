@@ -11,7 +11,7 @@ public class TestEmployee {
         String firstName="Joanna";
         String lastName="Walkiewicz";
         int salary=2000;
-        Employee employee = new Employee (id, firstName,lastName,salary);  //tworzenie nowego obiektu
+        Employee employee = new Employee (id, firstName,lastName,salary);  
         System.out.println(employee.toString());
         employee.setSalary(10000);
         System.out.println(employee.toString());
