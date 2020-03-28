@@ -1,0 +1,48 @@
+/* SUMMARY:HORSE-RAICING DUALS;Casablanca’s hippodrome is organizing a new type of horse racing: duals. During a dual, only two horses will participate in the race. In order for the race to be interesting, it is necessary to try to select two horses with similar strength.
+
+Write a program which, using a given number of strengths, identifies the two closest strengths and shows their difference with an integer (≥ 0).
+
+AUTHOR: Joanna Walkiewicz*/
+
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt(); 
+        ArrayList<Integer> sily_koni = new ArrayList<>();
+        for (int i = 0; i < N; i++) { 
+            int pi = in.nextInt(); 
+            sily_koni.add(pi); 
+        }
+        Collections.sort(sily_koni); 
+        boolean pierwsza = true;
+        int roznica=0; 
+        int a=0; 
+        int b=0; 
+        
+        for(int x : sily_koni) 
+        {
+            b++; 
+            if(b==2 && pierwsza) 
+            {
+                pierwsza=false; 
+                roznica=x-a; 
+            }
+            else if(roznica>(x-a) && !pierwsza) 
+            {
+                roznica=x-a; 
+            }
+            a=x;  
+        }
+        System.out.println(roznica);
+    }
+}
