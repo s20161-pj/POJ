@@ -1,0 +1,76 @@
+/**
+ * SUMMARY:Self-driving car testing; Auto-generated code below aims at helping you parse
+ * 	   the standard input according to the problem statement.
+ *AUTHOR:  Joanna Walkiewicz
+**/
+
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        System.err.println("N=" + N);
+        if (in.hasNextLine()) {
+            in.nextLine();
+        }
+        
+        String xthenCommands = in.nextLine();
+        String[] comms = xthenCommands.split(";");
+        System.err.println("Polecenia: " + xthenCommands);
+        System.err.println("Ilosc polecen:" + comms.length);
+        
+        int start_pos = Integer.parseInt(comms[0])-1;
+        System.err.println("Pozycja startowa:" + start_pos);
+        
+        String movement = "";
+        
+        for(int i = 1; i<comms.length; i++)
+        {
+           
+            String temp = comms[i];
+            
+            int temp_num = Integer.parseInt(temp.substring(0, temp.length()-1));
+            
+            String temp_dir = temp.substring(temp.length()-1, temp.length());
+            
+            for(int a=1; a<=temp_num; a++)
+            {
+                movement += temp_dir;
+            }
+        }
+        System.err.println(movement);
+       
+        char[] mov = movement.toCharArray();
+      
+        int n = 0;
+        
+        for (int i = 0; i < N; i++) {
+            String rthenRoadpattern = in.nextLine();
+             
+            String[] pattern = rthenRoadpattern.split(";");
+            
+            int y = Integer.parseInt(pattern[0]);
+            
+            for(int a = 0; a<y; a++)
+            {
+                char[] z = pattern[1].toCharArray();
+                
+                if(mov[n] == 'R'){
+                    start_pos++;
+                }
+                if(mov[n] == 'L'){ 
+                    start_pos--;
+                }
+                z[start_pos] = '#'; 
+                n++; 
+                System.out.println(String.copyValueOf(z)); 
+            }
+        }
+    }
+}
