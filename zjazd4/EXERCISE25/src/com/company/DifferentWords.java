@@ -1,5 +1,5 @@
 /*
- * SUMMARY: EXERCISES 26; As in previous we want to print out the words in a file, but for this program we also want to print out their count, in ascending order of occurrence. Thus, for the input file
+ * SUMMARY: EXERCISES 25; The exercise is to write the program DifferentWords, which prints out the set of different words in a given file, and their number. For example, if given the file containing
  * AUTHOR: "Joanna Walkiewicz"
  */
 package com.company;
