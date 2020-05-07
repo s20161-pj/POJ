@@ -1,0 +1,66 @@
+
+/*
+ * SUMMARY: Codinggame; https://www.codingame.com/ide/puzzle/mime-type
+
+ * AUTHOR: "Joanna Walkiewicz"
+ */
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt(); 
+        int Q = in.nextInt(); 
+        
+        List<String> extensions = new ArrayList<>();
+        List<String> mime_types = new ArrayList<>();
+
+        for (int i = 0; i < N; i++) {
+            String EXT = in.next(); 
+            String MT = in.next(); 
+            extensions.add(EXT.toLowerCase()); 
+            mime_types.add(MT); 
+        }
+        in.nextLine();
+
+        
+        List<String> output = new ArrayList<>();
+
+        for (int i = 0; i < Q; i++) {
+            String FNAME = in.nextLine(); 
+
+            int lindex = FNAME.lastIndexOf('.');
+
+            String extension = "";
+            String MIME = "UNKNOWN";
+
+            if(lindex>0 || FNAME.substring(0,1).equals("."))
+            {
+                
+                extension = FNAME.substring(lindex+1).toLowerCase();
+
+                int list_index = extensions.indexOf(extension);
+
+                
+                if(list_index != -1)
+                {
+                    
+                    MIME = mime_types.get(list_index);
+                }
+            }
+            
+            output.add(MIME);
+        }
+       
+        for(String element : output){
+            System.out.println(element);
+        }
+    }
+}

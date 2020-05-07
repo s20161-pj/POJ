@@ -1,0 +1,82 @@
+/*
+ * SUMMARY: Codinggame; https://www.codingame.com/ide/puzzle/dolbears-law
+
+ * AUTHOR: "Joanna Walkiewicz"
+ */
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int M = in.nextInt();
+        if (in.hasNextLine()) {
+            in.nextLine();
+        }
+        System.err.println(M);
+        
+        List<Double> list = new ArrayList<>();
+        for (int i = 0; i < M; i++) {
+            String LINE = in.nextLine();
+            for(String element : LINE.split(" "))
+            {
+                list.add(Double.valueOf(element));
+            }
+        }
+        
+        double avg1 = 0;
+        double n60 = 0;
+        int i = 0;
+        
+        
+        for(Double element : list)
+        {
+            n60 += element;
+        }
+        
+        n60 = n60/(list.size()/15);
+        avg1 = (double) Math.round((10+(n60-40)/7)*10)/10;
+        System.out.println(avg1); //zwracamy odpowiedz
+        
+        if(avg1>=5 && avg1<=30)
+        {
+           
+            List<Double> avg2 = new ArrayList<>();
+            
+            i = 0;
+            
+            double n8 = 0;
+            for(Double element : list)
+            {
+                i++; 
+                if(i%2==0){
+                    
+                    n8=n8+element+5;
+                    avg2.add(n8);
+                    n8=0;
+                }
+                else
+                {
+                    n8=n8+element;
+                    
+                }
+            }
+           
+            n8 = 0;
+            
+            for(Double element : avg2)
+            {
+                n8 = n8+element;
+            }
+            n8=(double) Math.round( (n8/avg2.size())*10 )/10;
+            System.out.println(n8);
+        }
+    }
+}
